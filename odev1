@@ -8,9 +8,9 @@ def ozyinelemeli(n):
 
 def iteratif(n):
     x = 1
-    li = list(range(1, n + 1))
-    for each in li:
-        x = x * each
+    liste = list(range(1, n + 1))
+    for i in liste:
+        x = x * i
     return x
 
 sayi = int(input("Bir sayi girin: "))
@@ -21,4 +21,5 @@ elif sayi == 0:
     print("Sıfırın faktöriyeli 1'dir")
 else:
     print("Özyinelemeli faktöriyel sonucu = {}".format(ozyinelemeli(sayi) ))
-    print("İteratif faktöriyel sonucu = {}".format(iteratif(sayi) ))
+    print("İteratif faktöriyel sonucu = {}".format(iteratif(sayi) )) 
+
