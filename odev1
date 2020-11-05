@@ -12,12 +12,13 @@ def iteratif(n):
     for each in li:
         x = x * each
     return x
-n = int(input("Bir sayi girin: "))
 
-if n < 0:
+sayi = int(input("Bir sayi girin: "))
+
+if sayi < 0:
     print("0'dan küçük sayıların faktöriyeli alınmaz")
-elif n == 0:
+elif sayi == 0:
     print("Sıfırın faktöriyeli 1'dir")
 else:
-    print("Özyinelemeli faktöriyel sonucu = {}".format(ozyinelemeli(n)))
-    print("İteratif faktöriyel sonucu = {}".format(iteratif(n)))
+    print("Özyinelemeli faktöriyel sonucu = {}".format(ozyinelemeli(sayi) ))
+    print("İteratif faktöriyel sonucu = {}".format(iteratif(sayi) ))
