@@ -1,0 +1,23 @@
+def ozyinelemeli(n):
+    if n == 0:
+        return 1
+    else:
+        return n * ozyinelemeli(n-1)
+    print(n)
+
+
+def iteratif(n):
+    x = 1
+    li = list(range(1, n + 1))
+    for each in li:
+        x = x * each
+    return x
+n = int(input("Bir sayi girin: "))
+
+if n < 0:
+    print("0'dan küçük sayıların faktöriyeli alınmaz")
+elif n == 0:
+    print("Sıfırın faktöriyeli 1'dir")
+else:
+    print("Özyinelemeli faktöriyel sonucu = {}".format(ozyinelemeli(n)))
+    print("İteratif faktöriyel sonucu = {}".format(iteratif(n)))
